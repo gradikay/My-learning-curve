@@ -1,0 +1,43 @@
+﻿body
+{
+    margin:0;
+}
+h1 {
+    text-align: center;
+    background-color: #000000;
+    color: rgb(255,0,0);
+    max-width: 100%;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    background-color: #00faf0;
+    color: #000000;
+    max-width: 100%;
+    margin: 0;
+}
+
+.working {
+    color: red;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+a {
+    margin: 0;
+    text-align: center;
+    background-color: hsla(300,50%,80%,1);
+    color: #ff00ff;
+    padding: 15px;
+    width: 50%;
+    text-decoration:none;
+    color:black;
+}
+
+    a:hover {
+        background-color: hsla(300,50%,80%,0.6);
+        text-decoration: underline;
+    }

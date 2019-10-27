@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <title>Learning HTML Part 2</title>
+            <link rel="stylesheet" href="index2.css" />
+            <style>
+                #title-header{
+                    background-color:rgb(250,30,250);
+                    text-align:center;
+                    color:blue;
+                }
+                
+                .test-link{
+                    background-color:rgba(255,0,0,1);
+                    color:#ffffff;
+                    text-decoration:none;
+                    padding:5px;
+                }
+                .test-link:visited{
+                    background-color:purple;
+                    color:hsl(0,0%,100%);
+                }
+                .test-link:hover{
+                    background-color:rgba(255,0,0,0.5);
+                    color:#ffffff;
+                }
+                
+                .test-link:active{
+                    background-color:green;
+                    color:#000000;
+                    text-align:center;
+                    font-size:100px;
+                }
+                h1{
+                    text-align:center;
+                    background-color:#000000;
+                    color:rgb(255,0,0);
+                }
+                table, th,td{
+                    border:1px solid black;
+                    border-collapse:collapse;
+                    /*border-spacing:15px;*/
+                    padding:5px;
+                }
+                
+            </style>
+        </head>
+
+        <body>
+            <a href="index.html" style="background-color:tomato;"> Part 1 - Simple Page HTML</a> |
+            <a href="part2.html" style="background-color:tomato" ;>Part 2 - Styling Simple Page HTML</a> |
+            <a href="part3.html" style="background-color:tomato" ;>Part 3 - Deep HTML5</a> |
+            <a href="lhtml/index.html" target="_blank">Learning Page</a>
+            <hr>
+            <h1 style="color:blue;">I am coming with a style!</h1>
+            <h5 style="background-color:rgb(255,30,30);">I am colored with an rgb</h5>
+            <h5 style="background-color:rgba(255,30,30,0.5)">I am colored with rgba and half transparent!</h5>
+            <p>Hover over me to see what <q title="Red, Green, Blue">RGB</q> means!</p>
+            <p>Hover over me to see what <i title="first:ff is red; second:ff is Green; third:ff is Blue; ff is white; 00 is black">#ffffff</i> stands for!</p>
+            <p>Hover over me to see what <mark title="Hue, Saturation, Lightness; it can hold an alpha value A">HSL</mark> is short for!</p>
+            <h5 style="background-color:hsla(200,50%,50%,0.5);">I am colored with hsla</h5>
+
+            <h1 id="title-header">CSS STYLING IN THE HEAD SECTION</h1>
+            <a href="#1" class="test-link">See how I change!</a><a class="test-link" href="#2"> See me too!</a>
+            <a href="#3" class="test-link" target="_self">I open in the same page</a>|
+            <a href="#4" class="test-link" target="_blank">I open in a new window</a>|
+            <a href="#6" class="test-link" target="_top">I will open a same tab, but breakout the frame</a>|
+            <a href="#7" class="test-link" target="_parent">I open in my parent frame!</a>
+
+            <h1>Using Images</h1><hr>
+            <img src="images/011.JPG" alt="Gradi's smilling picture" width="200" height="200" />
+            <img src="images/011.JPG" alt="Gradi's smilling picture" width="200" height="200" />
+            <img src="images/011.JPG" alt="Gradi's smilling picture" width="200" height="200" />
+            <img src="images/011.JPG" alt="Gradi's smilling picture" width="200" height="200" />
+            <p>always add <q>border:0;</q> to prevent IE9 or earlier version to add border to the image </p>
+
+
+            <p>
+                this image should float to the left
+                <img src="images/011.jpg" alt="Gradi is smilling" style="border:0; width:200px; height:250px; float:left;" />
+            </p><hr>
+            <p>
+                this image should float to the right
+                <img src="images/011.jpg" alt="Gradi is always smilling" style="border:0; width:200px; height:250px; float:right;" />
+            </p>
+
+            <h1>Using Image map</h1><hr>
+            <p>For image maps <q>rect</q> <mark>coords="x,y,x,y"</mark> first x,y upper; second x,y lower coords, starting from top left 0,0</p>
+            <p>For image maps <q>circle</q> <mark>coords="x,y,r"</mark>first x,y finds the center then enter radius</p>
+            <p>you can use a function or direct to a image reference <strong>href</strong></p>
+            <p>you can also shape="default" for the entire picture or shape="Poly" for a polygonal region</p>
+            <image src="images/498.jpg" alt="Gradi and his dad" style="border:0; width:200px; height:250px;" usemap="#findG" />
+            <map name="findG">
+                <area alt="Gradi's dad" href="498.jpg" shape="circle" coords="65,110,20" />
+                <area alt="This is Gradi" href="images/011.jpg" shape="rect" coords="150,100,200,140" title="Gradi Kayamba" />
+                <area shape="circle" coords="50,200,40" onclick="myFunction()" />
+
+            </map>
+
+            <h1>Background Image</h1><hr>
+            <pre style="background-image:url('images/011.jpg'); padding:15px;">
+The age of the Kings
+Yan was 12 when he started to fight
+Little know to him that he was called to be a king
+In a few years he would have to fight of bigger opponents 
+Such as lions and homorectumus.
+</pre>
+            <pre style="background-image:url('images/011.jpg'); padding:15px; background-repeat:repeat-x;">
+The age of the Kings
+Yan was 12 when he started to fight
+Little know to him that he was called to be a king
+In a few years he would have to fight of bigger opponents 
+Such as lions and homorectumus.
+</pre>
+            <h1>Picture elemenet introduced in HTML5</h1><hr />
+            <picture>
+                <source media="(min-width: 630px)" srcset="images/498.jpg" />
+                <source media="(min-width: 200px)" srcset="images/011.jpg" />
+                <img src="images/011.jpg" alt="Gradi is smilling" style="width:200px; height:250px;" />
+            </picture>
+            <h1>Tables</h1><hr>
+            <table>
+                <tr>
+                    <th>Gender</th>
+                    <th>Name</th>
+                    <th>Is married?</th>
+                </tr>
+                <tr>
+                    <td>male</td>
+                    <td>Musa</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>female</td>
+                    <td>Nzeza</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+            <br />
+            <table>
+                <tr>
+                    <th>Gender</th>
+                    <th colspan="2">Name</th>
+                    <th>Is married?</th>
+                </tr>
+                <tr>
+                    <td>male</td>
+                    <td>Musa</td>
+                    <td>Matondo</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>female</td>
+                    <td>Nzeza</td>
+                    <td>Ladi</td>
+                    <td>Yes</td>
+
+                </tr>
+            </table>
+            <br />
+            <table>
+                <tr>
+                    <th rowspan="2">Gender</th>
+                    <td>Musa</td>
+                    <td>Musa</td>
+                </tr>
+                <tr>
+                    <td>This</td>
+                    <td>Nzeza</td>
+
+                </tr>
+            </table>
+            <table>
+                <caption>This is Gradi</caption>
+                <tr>
+                    <th rowspan="2">Gender</th>
+                    <td>Musa</td>
+                    <td>Musa</td>
+                </tr>
+                <tr>
+                    <td>This</td>
+                    <td>Nzeza</td>
+
+                </tr>
+            </table>
+            <p>add #id to the table tag to style it!</p>
+            <table>
+                <caption>This is Gradi</caption>
+                <colgroup>
+                    <col span="2" style="background-color:red;" />
+                    <col style="background-color:lawngreen;" />
+                </colgroup>
+                <tr>
+                    <th>Gender</th>
+                    <th>Name</th>
+                    <th>Is married?</th>
+                </tr>
+                <tr>
+                    <td>male</td>
+                    <td>Musa</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>female</td>
+                    <td>Nzeza</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+            <br />
+            <table>
+                <caption>This is a calander</caption>
+                <colgroup>
+                    <col style="background-color:palevioletred;"/>
+                    <col style="background-color:lightgreen;"/>
+                    <col style="background-color:dodgerblue;"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>January</th>
+                        <th>May</th>
+                        <th>Juin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25</td>
+                        <td>21</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>21</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+                <tfoot style="font-weight:bold;">
+                    <tr>
+                        <td>fete</td>
+                        <td>done</td>
+                        <td>other</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+
+
+        </body>
+
+
+    </html> 
