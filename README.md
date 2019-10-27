@@ -3,27 +3,8 @@ I am uploading each work since I usually work offline.
 Most of the work here are rough drafts.
 These files show how I learned how to program; self reference.
 go here to see it! https://gradikay.github.io/My-learning-curve/
-<p align="center">
-  <a href="https://wasmer.io" target="_blank" rel="noopener noreferrer">
-    <img width="300" src="https://raw.githubusercontent.com/wasmerio/wasmer/master/logo.png" alt="Wasmer logo">
-  </a>
-</p>
 
-<p align="center">
-  <a href="https://dev.azure.com/wasmerio/wasmer/_build/latest?definitionId=3&branchName=master">
-    <img src="https://img.shields.io/azure-devops/build/wasmerio/wasmer/3.svg?style=flat-square" alt="Build Status">
-  </a>
-  <a href="https://github.com/wasmerio/wasmer/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/wasmerio/wasmer.svg?style=flat-square" alt="License">
-  </a>
-  <a href="https://spectrum.chat/wasmer">
-    <img src="https://withspectrum.github.io/badge/badge.svg" alt="Join the Wasmer Community">
-  </a>
-  <a href="https://twitter.com/wasmerio">
-    <img alt="Follow @wasmerio on Twitter" src="https://img.shields.io/twitter/follow/wasmerio?label=%40wasmerio&style=flat-square">
-  </a>
-</p>
-
+<p style="color:red;">Introduction</p>
 ## Introduction
 
 [Wasmer](https://wasmer.io/) is a standalone WebAssembly runtime for running WebAssembly [outside of the browser](https://webassembly.org/docs/non-web/), supporting [WASI](https://github.com/WebAssembly/WASI) and [Emscripten](https://emscripten.org/).
