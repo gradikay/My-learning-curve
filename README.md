@@ -1,18 +1,8 @@
-# My-learning-curve
+## My-learning-curve
 I am uploading each work since I usually work offline.
 Most of the work here are rough drafts.
 These files show how I learned how to program; self reference.
 go here to see it! https://gradikay.github.io/My-learning-curve/
-
-## Introduction
-
-[Wasmer](https://wasmer.io/) is a standalone WebAssembly runtime for running WebAssembly [outside of the browser](https://webassembly.org/docs/non-web/), supporting [WASI](https://github.com/WebAssembly/WASI) and [Emscripten](https://emscripten.org/).
-
-Install the Wasmer CLI with:
-
-```sh
-curl https://get.wasmer.io -sSfL | sh
-```
 
 > Note: *Wasmer is also [available on Windows](https://github.com/wasmerio/wasmer/releases)*
 
