@@ -14,8 +14,8 @@ go here to see it! https://gradikay.github.io/My-learning-curve/
 # Gradi Kayamba
 I am a webdeveloper
 ```
-- [`HTML5`](https://gradikay.github.io/My-learning-curve/part2.html): code related to the Wasmer executable itself
-- [`CSS3`](./part2.html): modularized libraries that Wasmer uses under the hood
-- [`PHP`](./part3.html): some useful examples for getting started with Wasmer
+- [`Part 1`](https://gradikay.github.io/My-learning-curve/part1.html): see my first coding 
+- [`Part 2`](https://gradikay.github.io/My-learning-curve/part2.html): see the second step here
+- [`Part 3`](https://gradikay.github.io/My-learning-curve/part3.html): see the third step here
 
-* C API: `make capi`
+* LHTML: `Learning HTML`
