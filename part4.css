@@ -1,0 +1,67 @@
+﻿/*
+    We do not was the body to have a margin, it makes styling messy!
+*/
+@charset "UTF-8";
+body{
+    margin:0;
+}
+/*Always include border "0" for IE9 and earlier
+    they will have a border by default if you do no specify
+
+*/
+img{
+    border:0;
+}
+/* Styling out top Div*/
+div#divTop{
+    background-color:black; color:white;
+    text-align:center;
+    margin:0; padding:0;
+}
+div#divTop h1{
+    background-color:rgba(200,0,0,0.5);
+    font-size:1.5em;
+    padding:15px;
+    margin:0;
+}
+div#divTop ul{
+    
+    background-color: rgba(250,0,0,0.5);
+    margin:auto; padding:0 0 0 15px;
+    display:block;
+    /*
+        to clear the float from "li" call overflow on the "ul" 
+
+    */
+    overflow:hidden;
+    align-content:center;
+    list-style-type:none;
+}
+div#divTop li{
+    float:left;
+}
+div#divTop a{
+   
+    padding:10px;
+    display:block;
+    font-size:1em;
+    text-decoration:none;
+    color:hsla(0,0%,100%,0.5);
+    margin:0;
+    border-left:1px solid hsl(0,50%,50%);
+    
+}
+div#divTop a:hover{
+    background-color: rgba(250,0,0,0.7);
+    color:white;
+  
+}
+a.last{
+    border-right:1px solid hsl(0,50%,50%);
+}
+div.divMid{
+    margin:15px;
+}
+h1, h3{
+    text-decoration:underline;
+}

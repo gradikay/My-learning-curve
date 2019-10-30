@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="UTF-8" />
+    <!-- author of the web page -->
+    <meta name="viewport" content="width=device width, initial-scale=1.0" />    <!-- author of the web page -->
+    <meta name="author" content="Gradi Kayamba"/>
+    <!-- key words for search engine -->
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT, PHP, GRADI KAYAMBA, GRADI MUNSIENSI KAYAMBA, PROGRAMMING" />
+    <!-- description of the web page -->
+    <meta name="description" content="Learning To Program with Gradi Kayamba"/>
+    <!-- calling our styling sheet -->
+    <link rel="stylesheet" href="part4.css" />
+    <!-- naming our page -->
+    <title>Learning HTML with GMK- Part 4</title>
+
+</head>
+<body>
+    <div id="divTop">
+        <h1>Learning HTML with Gradi Kayamba</h1>
+        <ul>
+            <li><a href="index.html">PART 1</a></li>
+            <li><a href="part2.html">PART 2</a></li>
+            <li><a href="part3.html">PART 3</a></li>
+            <li><a class="last" href="part4.html">PART 4</a></li>
+        </ul>
+
+    </div>
+    <div class="divMid">
+        <h1>HTML and Javascript</h1>
+        <h3>Javascript</h3>
+        <h4>We are using document.getElementById('id').innerHTML = "something"; [TO INSERT TEXT]</h4>
+        <h4>We are using document.getElementById('id').style.backgroundColor = "color"; [TO CHANGE COLOR]</h4>
+        <h4>We are using document.getElementById('id').src = "color"; [TO CHANGE THE SOURCE]</h4>
+        <p>This text "<span id="hello"></span>" is generated with javascript!</p>
+        <p>This text "<span id="hellow"></span>" is generated with javascript!</p>
+        <p>--- Always add < noscript > tags after your Javascripts!</p>
+        <img src="" id="image" alt="I am from Java" width="200" height="200" />
+        <script>
+            document.getElementById('hello').innerHTML = "You are on Gradi's Website!";
+            document.getElementById('hellow').innerHTML = "Yes! Papy";
+            document.getElementById("hellow").style.color = "red";
+            document.getElementById("hello").style.fontWeight = "bold";
+            document.getElementById("image").src = "images/011.jpg";
+        </script>
+        <noscript>Sorry, your browser doesn't support Javascript!</noscript>
+        <h1 title="Uniform Resource Locator">URL definition</h1>
+        <h1 title="eXtensive HyperText Markup Language">XHTML definition</h1>
+
+    </div>
+    <div class="divMid">
+        <h3>Forms</h3>
+        <form>
+            <label for="firstName">First Name:</label><br />
+            <input type="text" name="firstName" id="firstName" placeholder="First name" /> <br />
+            Last Name: <br />
+            <input type="text" placeholder="Last name" /> <br />
+            I am a text field form, please click below!
+            <input type="submit" />
+        </form>
+        <hr />
+        <form action="part4.html" method="get" target="_self">
+            Choose your option below:<br />
+            <input type="radio" name="animal" value="dog" checked="checked" /> Dog <br />
+            <input type="radio" name="animal" value="cat" /> Cat <br />
+            <input type="radio" name="animal" value="duck" /> Duck <br />
+            <input type="submit" value="I Choose This!" />
+
+        </form>
+        <hr />
+        <form method="post" target="_parent" action="part4.html">
+            <fieldset>
+                <legend>Personal Animal Information</legend>
+                <input type="text" placeholder="Animal Name" name="animalName" /> Animal Name: <br />
+                <input type="text" placeholder="Owner's Name" name="OwnerName" /> Owner&aps Name: <br />
+                Choose Animal Type: <br />
+                <input type="radio" name="animalType" value="pet" checked="checked" /> Pet <br />
+                <input type="radio" name="animalType" value="farm" /> Farm <br />
+                <input type="radio" name="animalType" value="wild" /> Wild <br />
+                <input type="submit" value="submit" />
+
+            </fieldset>
+        </form>
+        <hr />
+        <h3>a select <code>field</code> without a size</h3>
+        <select name="animal">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="cattle" selected="selected">Cattle</option>
+        </select>
+        <h3>a select <mark>field</mark> with a size</h3>
+        <select name="animal" size="2" multiple="multiple">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="cattle" selected="selected">Cattle</option>
+        </select>
+        <h3>a select <q>field</q> with a zise and <sup>allowing</sup> multiple <sub>selections</sub></h3>
+        <select name="animal" size="5" multiple="multiple">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="cat">Cat</option>
+            <option value="cat">Cat</option>
+            <option value="cat">Cat</option>
+            <option value="cat">Cat</option>
+            <option value="cat">Cat</option>
+            <option value="cattle" selected="selected">Cattle</option>
+        </select>
+        <h3>Text area</h3>
+        <textarea name="message" rows="20" cols="40">
+Ruby the cubic
+</textarea>
+        <p>Click the button bellow and see what happens <mark id="saying"></mark> !</p>
+
+        <button type="button" onclick="sayIt()">Click to see</button>
+        <hr />
+        <h3>datalist</h3>
+        <form method="post" target="_self" action="part4.html">
+            <input list="animals" />
+            <datalist id="animals">
+                <option value="Okapi" />
+                <option value="Cat" />
+                <option value="Dog" />
+                <option value="Rabbit" />
+                <option value="Eagle" />
+            </datalist>
+            <input type="submit" value="Done" />
+        </form>
+        <hr />
+        <h3>OUTPUT - for calculation</h3>
+        <!--oninput="x.value=parseInt(a.value)+parseInt(b.value); -->
+        <form method="post" action="part3.html">
+            0
+            <input type="range" name="a" id="a" value="140" />
+            140 +
+            <input type="number" name="b" id="b" value="5" />
+            =
+            <output name="x" for="a b"></output> <br /> <br />
+            <input type="submit" value="Compute" />
+
+        </form>
+        <hr />
+        <h3>Input types</h3>
+        <label for="fN">First Name:</label>
+        <input type="text" name="firstName" id="fN" placeholder="First Name" /> <br />
+        <label for="aT">Animal Type</label>
+        <input type="radio" name="animalType" id="aT" value="pet" /> Pet: <br />
+        <input type="radio" name="ainmalType" value="farm" /> Farm: <br />
+        <input type="radio" name="animalType" value="rescued" /> Rescued : <br />
+        <input type="submit" value="I am a submit button" /> <br />
+        <button type="button">I am a regular button</button> <br />
+        <label for="age">Age</label> <input type="number" name="age" id="age" min="1" max="40" /> <br />
+        <label for="week">Pick a Week:</label> <input type="week" id="week" /> <br />
+        <label for="sR">Write a description:</label> <textarea name="summery" id="sR" cols="20" rows="20"></textarea><br />
+
+        <form>
+            <fieldset>
+                <legend>This is a field set</legend>
+                <label for="dateB">Pick your Birthdate :</label> <input type="date" name="anniversary" id="dateB" /> <br />
+                <label for="aTT">Select one: </label> <select name="animalType" size="2" id="aTT" multiple="multiple">
+                    <option value="Mouse"> Mouse </option> 
+                    <option value="Mickey">Mickey</option>
+                    <option value="Mini" > Mini</option>
+                    <option value="Mooo" > Mooo</option>
+                </select> <br />
+                <lable for="pN">Phone Number:</lable> <input type="tel" id="pN" name="phoneNumber" pattern="([0-9]){3} [0-9]{3}-[0-9]{4}" />
+
+            </fieldset>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
